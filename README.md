@@ -71,3 +71,14 @@ namespace SpellCheckerTask
         }
     }
 }
+// Save misspelled words
+            
+            if (misspelledWords != "")
+            {
+                File.WriteAllText("MisspelledWords.txt", misspelledWords);
+                Console.WriteLine("Misspelled words saved to MisspelledWords.txt.");
+            }
+            else
+            {
+                Console.WriteLine("No misspelled words found.");
+            }
